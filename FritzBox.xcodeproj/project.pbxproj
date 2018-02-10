@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		291EFB3F2023EC9C00CAAE12 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 291EFB3E2023EC9C00CAAE12 /* Button.m */; };
+		291EFB422023EEDE00CAAE12 /* Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = 291EFB412023EEDE00CAAE12 /* Audio.m */; };
+		29549BAA20263EE300279158 /* AudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29549BA920263EE300279158 /* AudioView.m */; };
+		2981E0E1202462DD00ACB0E6 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 2981E0E0202462DD00ACB0E6 /* samples */; };
+		2981E0E3202462F200ACB0E6 /* IMAGES in Resources */ = {isa = PBXBuildFile; fileRef = 2981E0E2202462F200ACB0E6 /* IMAGES */; };
+		2998F728202364F500EAFE73 /* Vox.m in Sources */ = {isa = PBXBuildFile; fileRef = 2998F727202364F500EAFE73 /* Vox.m */; };
+		2998F72B2023650300EAFE73 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 2998F72A2023650300EAFE73 /* Box.m */; };
+		2998F73820236E4B00EAFE73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2998F73720236E4B00EAFE73 /* Assets.xcassets */; };
+		29BC999920223CEF0007E4DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BC999820223CEF0007E4DB /* AppDelegate.m */; };
+		29BC99A020223CEF0007E4DB /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BC999F20223CEF0007E4DB /* GameScene.m */; };
+		29BC99A320223CEF0007E4DB /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BC99A220223CEF0007E4DB /* GameViewController.m */; };
+		29BC99A620223CEF0007E4DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BC99A420223CEF0007E4DB /* Main.storyboard */; };
+		29BC99AB20223CEF0007E4DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BC99A920223CEF0007E4DB /* LaunchScreen.storyboard */; };
+		29BC99AE20223CEF0007E4DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BC99AD20223CEF0007E4DB /* main.m */; };
+		29BC99B820223CEF0007E4DB /* FritzBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BC99B720223CEF0007E4DB /* FritzBoxTests.m */; };
+		29BC99C320223CEF0007E4DB /* FritzBoxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BC99C220223CEF0007E4DB /* FritzBoxUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29BC99B420223CEF0007E4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29BC998C20223CEF0007E4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29BC999320223CEF0007E4DB;
+			remoteInfo = FritzBox;
+		};
+		29BC99BF20223CEF0007E4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29BC998C20223CEF0007E4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29BC999320223CEF0007E4DB;
+			remoteInfo = FritzBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		291EFB3D2023EC9C00CAAE12 /* Button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		291EFB3E2023EC9C00CAAE12 /* Button.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
+		291EFB402023EEDE00CAAE12 /* Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		291EFB412023EEDE00CAAE12 /* Audio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audio.m; sourceTree = "<group>"; };
+		29549BA820263EE300279158 /* AudioView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioView.h; sourceTree = "<group>"; };
+		29549BA920263EE300279158 /* AudioView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioView.m; sourceTree = "<group>"; };
+		2981E0E0202462DD00ACB0E6 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
+		2981E0E2202462F200ACB0E6 /* IMAGES */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IMAGES; sourceTree = "<group>"; };
+		2998F726202364F500EAFE73 /* Vox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vox.h; sourceTree = "<group>"; };
+		2998F727202364F500EAFE73 /* Vox.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vox.m; sourceTree = "<group>"; };
+		2998F7292023650300EAFE73 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		2998F72A2023650300EAFE73 /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		2998F73720236E4B00EAFE73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FritzBox/Assets.xcassets; sourceTree = "<group>"; };
+		29BC999420223CEF0007E4DB /* FritzBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29BC999720223CEF0007E4DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		29BC999820223CEF0007E4DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		29BC999E20223CEF0007E4DB /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		29BC999F20223CEF0007E4DB /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		29BC99A120223CEF0007E4DB /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		29BC99A220223CEF0007E4DB /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		29BC99A520223CEF0007E4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29BC99AA20223CEF0007E4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29BC99AC20223CEF0007E4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29BC99AD20223CEF0007E4DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29BC99B320223CEF0007E4DB /* FritzBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FritzBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29BC99B720223CEF0007E4DB /* FritzBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FritzBoxTests.m; sourceTree = "<group>"; };
+		29BC99B920223CEF0007E4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29BC99BE20223CEF0007E4DB /* FritzBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FritzBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29BC99C220223CEF0007E4DB /* FritzBoxUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FritzBoxUITests.m; sourceTree = "<group>"; };
+		29BC99C420223CEF0007E4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29BC999120223CEF0007E4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BC99B020223CEF0007E4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BC99BB20223CEF0007E4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29BC998B20223CEF0007E4DB = {
+			isa = PBXGroup;
+			children = (
+				2998F73720236E4B00EAFE73 /* Assets.xcassets */,
+				29BC999620223CEF0007E4DB /* FritzBox */,
+				29BC99B620223CEF0007E4DB /* FritzBoxTests */,
+				29BC99C120223CEF0007E4DB /* FritzBoxUITests */,
+				29BC999520223CEF0007E4DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29BC999520223CEF0007E4DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29BC999420223CEF0007E4DB /* FritzBox.app */,
+				29BC99B320223CEF0007E4DB /* FritzBoxTests.xctest */,
+				29BC99BE20223CEF0007E4DB /* FritzBoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29BC999620223CEF0007E4DB /* FritzBox */ = {
+			isa = PBXGroup;
+			children = (
+				2981E0E2202462F200ACB0E6 /* IMAGES */,
+				2981E0E0202462DD00ACB0E6 /* samples */,
+				29BC999720223CEF0007E4DB /* AppDelegate.h */,
+				29BC999820223CEF0007E4DB /* AppDelegate.m */,
+				29BC999E20223CEF0007E4DB /* GameScene.h */,
+				29BC999F20223CEF0007E4DB /* GameScene.m */,
+				291EFB402023EEDE00CAAE12 /* Audio.h */,
+				291EFB412023EEDE00CAAE12 /* Audio.m */,
+				2998F726202364F500EAFE73 /* Vox.h */,
+				2998F727202364F500EAFE73 /* Vox.m */,
+				29549BA820263EE300279158 /* AudioView.h */,
+				29549BA920263EE300279158 /* AudioView.m */,
+				2998F7292023650300EAFE73 /* Box.h */,
+				2998F72A2023650300EAFE73 /* Box.m */,
+				291EFB3D2023EC9C00CAAE12 /* Button.h */,
+				291EFB3E2023EC9C00CAAE12 /* Button.m */,
+				29BC99A120223CEF0007E4DB /* GameViewController.h */,
+				29BC99A220223CEF0007E4DB /* GameViewController.m */,
+				29BC99A420223CEF0007E4DB /* Main.storyboard */,
+				29BC99A920223CEF0007E4DB /* LaunchScreen.storyboard */,
+				29BC99AC20223CEF0007E4DB /* Info.plist */,
+				29BC99AD20223CEF0007E4DB /* main.m */,
+			);
+			path = FritzBox;
+			sourceTree = "<group>";
+		};
+		29BC99B620223CEF0007E4DB /* FritzBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				29BC99B720223CEF0007E4DB /* FritzBoxTests.m */,
+				29BC99B920223CEF0007E4DB /* Info.plist */,
+			);
+			path = FritzBoxTests;
+			sourceTree = "<group>";
+		};
+		29BC99C120223CEF0007E4DB /* FritzBoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				29BC99C220223CEF0007E4DB /* FritzBoxUITests.m */,
+				29BC99C420223CEF0007E4DB /* Info.plist */,
+			);
+			path = FritzBoxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29BC999320223CEF0007E4DB /* FritzBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29BC99C720223CEF0007E4DB /* Build configuration list for PBXNativeTarget "FritzBox" */;
+			buildPhases = (
+				29BC999020223CEF0007E4DB /* Sources */,
+				29BC999120223CEF0007E4DB /* Frameworks */,
+				29BC999220223CEF0007E4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FritzBox;
+			productName = FritzBox;
+			productReference = 29BC999420223CEF0007E4DB /* FritzBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29BC99B220223CEF0007E4DB /* FritzBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29BC99CA20223CEF0007E4DB /* Build configuration list for PBXNativeTarget "FritzBoxTests" */;
+			buildPhases = (
+				29BC99AF20223CEF0007E4DB /* Sources */,
+				29BC99B020223CEF0007E4DB /* Frameworks */,
+				29BC99B120223CEF0007E4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29BC99B520223CEF0007E4DB /* PBXTargetDependency */,
+			);
+			name = FritzBoxTests;
+			productName = FritzBoxTests;
+			productReference = 29BC99B320223CEF0007E4DB /* FritzBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		29BC99BD20223CEF0007E4DB /* FritzBoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29BC99CD20223CEF0007E4DB /* Build configuration list for PBXNativeTarget "FritzBoxUITests" */;
+			buildPhases = (
+				29BC99BA20223CEF0007E4DB /* Sources */,
+				29BC99BB20223CEF0007E4DB /* Frameworks */,
+				29BC99BC20223CEF0007E4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29BC99C020223CEF0007E4DB /* PBXTargetDependency */,
+			);
+			name = FritzBoxUITests;
+			productName = FritzBoxUITests;
+			productReference = 29BC99BE20223CEF0007E4DB /* FritzBoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29BC998C20223CEF0007E4DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Leif Shackelford";
+				TargetAttributes = {
+					29BC999320223CEF0007E4DB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					29BC99B220223CEF0007E4DB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 29BC999320223CEF0007E4DB;
+					};
+					29BC99BD20223CEF0007E4DB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 29BC999320223CEF0007E4DB;
+					};
+				};
+			};
+			buildConfigurationList = 29BC998F20223CEF0007E4DB /* Build configuration list for PBXProject "FritzBox" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29BC998B20223CEF0007E4DB;
+			productRefGroup = 29BC999520223CEF0007E4DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29BC999320223CEF0007E4DB /* FritzBox */,
+				29BC99B220223CEF0007E4DB /* FritzBoxTests */,
+				29BC99BD20223CEF0007E4DB /* FritzBoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29BC999220223CEF0007E4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2981E0E3202462F200ACB0E6 /* IMAGES in Resources */,
+				2981E0E1202462DD00ACB0E6 /* samples in Resources */,
+				2998F73820236E4B00EAFE73 /* Assets.xcassets in Resources */,
+				29BC99A620223CEF0007E4DB /* Main.storyboard in Resources */,
+				29BC99AB20223CEF0007E4DB /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BC99B120223CEF0007E4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BC99BC20223CEF0007E4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29BC999020223CEF0007E4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2998F728202364F500EAFE73 /* Vox.m in Sources */,
+				291EFB3F2023EC9C00CAAE12 /* Button.m in Sources */,
+				29BC99A020223CEF0007E4DB /* GameScene.m in Sources */,
+				29BC99A320223CEF0007E4DB /* GameViewController.m in Sources */,
+				291EFB422023EEDE00CAAE12 /* Audio.m in Sources */,
+				2998F72B2023650300EAFE73 /* Box.m in Sources */,
+				29549BAA20263EE300279158 /* AudioView.m in Sources */,
+				29BC99AE20223CEF0007E4DB /* main.m in Sources */,
+				29BC999920223CEF0007E4DB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BC99AF20223CEF0007E4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29BC99B820223CEF0007E4DB /* FritzBoxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BC99BA20223CEF0007E4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29BC99C320223CEF0007E4DB /* FritzBoxUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29BC99B520223CEF0007E4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29BC999320223CEF0007E4DB /* FritzBox */;
+			targetProxy = 29BC99B420223CEF0007E4DB /* PBXContainerItemProxy */;
+		};
+		29BC99C020223CEF0007E4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29BC999320223CEF0007E4DB /* FritzBox */;
+			targetProxy = 29BC99BF20223CEF0007E4DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29BC99A420223CEF0007E4DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29BC99A520223CEF0007E4DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29BC99A920223CEF0007E4DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29BC99AA20223CEF0007E4DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29BC99C520223CEF0007E4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		29BC99C620223CEF0007E4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29BC99C820223CEF0007E4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BW4R8G8Q6;
+				INFOPLIST_FILE = FritzBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EMA.FritzBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		29BC99C920223CEF0007E4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BW4R8G8Q6;
+				INFOPLIST_FILE = FritzBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EMA.FritzBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		29BC99CB20223CEF0007E4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BW4R8G8Q6;
+				INFOPLIST_FILE = FritzBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EMA.FritzBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FritzBox.app/FritzBox";
+			};
+			name = Debug;
+		};
+		29BC99CC20223CEF0007E4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BW4R8G8Q6;
+				INFOPLIST_FILE = FritzBoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EMA.FritzBoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FritzBox.app/FritzBox";
+			};
+			name = Release;
+		};
+		29BC99CE20223CEF0007E4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BW4R8G8Q6;
+				INFOPLIST_FILE = FritzBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EMA.FritzBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FritzBox;
+			};
+			name = Debug;
+		};
+		29BC99CF20223CEF0007E4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BW4R8G8Q6;
+				INFOPLIST_FILE = FritzBoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EMA.FritzBoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FritzBox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29BC998F20223CEF0007E4DB /* Build configuration list for PBXProject "FritzBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BC99C520223CEF0007E4DB /* Debug */,
+				29BC99C620223CEF0007E4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29BC99C720223CEF0007E4DB /* Build configuration list for PBXNativeTarget "FritzBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BC99C820223CEF0007E4DB /* Debug */,
+				29BC99C920223CEF0007E4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29BC99CA20223CEF0007E4DB /* Build configuration list for PBXNativeTarget "FritzBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BC99CB20223CEF0007E4DB /* Debug */,
+				29BC99CC20223CEF0007E4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29BC99CD20223CEF0007E4DB /* Build configuration list for PBXNativeTarget "FritzBoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BC99CE20223CEF0007E4DB /* Debug */,
+				29BC99CF20223CEF0007E4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29BC998C20223CEF0007E4DB /* Project object */;
+}
