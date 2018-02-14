@@ -93,10 +93,16 @@ NSString *toBox = @"ZOOM";
     [_label setFontSize:130];
     [self addChild:_label];
 
-    _lspinner = [self spriteButton:^(SKNode* node, UITouch *t){
-        [_ltracks setPlaying:!_ltracks.playing];
-        [_rtracks setPlaying:!_rtracks.playing];
-    } imageNamed:@"Spinner" xPos:-.175 yPos:.105];
+    Action spinnerAction = ^(SKNode* node, UITouch *t){
+        if ([self isActive]){
+            [_ltracks setPlaying:!_ltracks.playing];
+            [_rtracks setPlaying:!_rtracks.playing];
+        } else {
+            [self toggleView];
+        }
+    };
+    
+    _lspinner = [self spriteButton:spinnerAction imageNamed:@"Spinner" xPos:-.175 yPos:.105];
     [self addChild:_lspinner];
     
     _ltracks = [[Tracks alloc] init];
@@ -110,27 +116,27 @@ NSString *toBox = @"ZOOM";
     float h = .26;
     float y = .13;
     
-    button = [self textButton:^(SKNode* node, UITouch *t){
-        [_ltracks toggleTrack:node];
-    } text:@"DRUMS" xPos:lx yPos:h-y*0];
+    Action lAction = ^(SKNode* node, UITouch *t){
+        if ([self isActive]){
+            [_ltracks toggleTrack:node];
+        } else {
+            [self toggleView];
+        }
+    };
+    
+    button = [self textButton:lAction text:@"DRUMS" xPos:lx yPos:h-y*0];
     button.name = @"drums";
     [_ltracks setDrums: button];
 
-    button = [self textButton:^(SKNode* node, UITouch *t){
-        [_ltracks toggleTrack:node];
-    } text:@"BASS" xPos:lx yPos:h-y*1.0];
+    button = [self textButton:lAction text:@"BASS" xPos:lx yPos:h-y*1.0];
     button.name = @"bass";
     [_ltracks setBass: button];
     
-    button = [self textButton:^(SKNode* node, UITouch *t){
-        [_ltracks toggleTrack:node];
-    } text:@"RHYTHM" xPos:lx yPos:h-y*2.0];
+    button = [self textButton:lAction text:@"RHYTHM" xPos:lx yPos:h-y*2.0];
     button.name = @"rhythm";
     [_ltracks setRhythm: button];
     
-    button = [self textButton:^(SKNode* node, UITouch *t){
-        [_ltracks toggleTrack:node];
-    } text:@"LEAD" xPos:lx yPos:h-y*3.0];
+    button = [self textButton:lAction text:@"LEAD" xPos:lx yPos:h-y*3.0];
     button.name = @"lead";
     [_ltracks setLead: button];
     
@@ -139,37 +145,33 @@ NSString *toBox = @"ZOOM";
     [self addChild:_ltracks.rhythm];
     [self addChild:_ltracks.lead];
     
-    _rspinner = [self spriteButton:^(SKNode* node, UITouch *t){
-        [_ltracks setPlaying:!_ltracks.playing];
-        [_rtracks setPlaying:!_rtracks.playing];
-    } imageNamed:@"Spinner" xPos:.163 yPos:.105];
+    _rspinner = [self spriteButton:spinnerAction imageNamed:@"Spinner" xPos:.163 yPos:.105];
     [self addChild:_rspinner];
     
     _rtracks = [[Tracks alloc] init];
     [_rtracks setSpinner: _rspinner ];
     [_rtracks setPlaying:true];
 
-    button = [self textButton:^(SKNode* node, UITouch *t){
-        [_rtracks toggleTrack:node];
-    } text:@"DRUMS" xPos:rx yPos:h-y*0];
+    Action rAction = ^(SKNode* node, UITouch *t){
+        if ([self isActive]){
+            [_rtracks toggleTrack:node];
+        } else {
+            [self toggleView];
+        }
+    };
+    button = [self textButton:rAction text:@"DRUMS" xPos:rx yPos:h-y*0];
     button.name = @"drums";
     [_rtracks setDrums: button];
     
-    button = [self textButton:^(SKNode* node, UITouch *t){
-        [_rtracks toggleTrack:node];
-    } text:@"BASS" xPos:rx yPos:h-y*1];
+    button = [self textButton: rAction text:@"BASS" xPos:rx yPos:h-y*1];
     button.name = @"bass";
     [_rtracks setBass: button];
     
-    button = [self textButton:^(SKNode* node, UITouch *t){
-        [_rtracks toggleTrack:node];
-    } text:@"RHYTHM" xPos:rx yPos:h-y*2];
+    button = [self textButton:rAction text:@"RHYTHM" xPos:rx yPos:h-y*2];
     button.name = @"rhythm";
     [_rtracks setRhythm: button];
     
-    button = [self textButton:^(SKNode* node, UITouch *t){
-        [_rtracks toggleTrack:node];
-    } text:@"LEAD" xPos:rx yPos:h-y*3];
+    button = [self textButton: rAction text:@"LEAD" xPos:rx yPos:h-y*3];
     button.name = @"lead";
     [_rtracks setLead: button];
 
@@ -192,6 +194,10 @@ NSString *toBox = @"ZOOM";
     return self;
 }
 
+-(Boolean)isActive {
+    return [_label.text isEqual: toVox];
+}
+
 -(void)toggleView {
     [self.sceneRef toggleView];
     if ([_label.text isEqual: toVox]){
@@ -210,9 +216,6 @@ NSString *toBox = @"ZOOM";
 }
 
 - (void)crossFade:(CGPoint)pos {
-    NSLog(@"%f", pos.x);
-    float w = self.size.width;
-    
     float throw = self.sceneRef.size.width * .67;
     float x = MAX(MIN(throw, pos.x), -throw);
     [_crossFader setPosition:CGPointMake(x, 0)];

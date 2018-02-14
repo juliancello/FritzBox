@@ -23,10 +23,8 @@
 
 -(instancetype)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]){
-//        _tMap = [[NSMutableDictionary alloc]init];
         _tMap = [[NSMapTable alloc] init];
-        _audio = [[Audio alloc] initWithEngine:self.audioEngine];
-        
+        _audio = [[Audio alloc] initWithEngine:nil];
     }
     return self;
 }
@@ -36,18 +34,14 @@
     _box.sceneRef = self;
     
     CGSize s = view.bounds.size;
-    
     float cs = view.contentScaleFactor;
     
-    _vox = [[Vox alloc]initWithTexture:nil color:[UIColor whiteColor] size:CGSizeMake(s.width*3,s.height*3)];
-    _vox.sceneRef = self;
-    
-    NSLog(@"init with scale, %f", view.contentScaleFactor);
+    NSLog(@"init with size,  %f,  %f, scale: %f", s.width, s.height, cs);
     
 
-//    _scale = 1/view.contentScaleFactor;
+    _vox = [[Vox alloc]initWithTexture:nil color:[UIColor whiteColor] size:CGSizeMake(s.width*3,s.height*3)];
+    _vox.sceneRef = self;
     _scale = s.width / 1920;
-    
     
     [_box setPosition: CGPointMake(s.width/2, s.height/2)];
     [_box setScale:_scale];

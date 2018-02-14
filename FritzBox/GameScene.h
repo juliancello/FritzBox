@@ -8,8 +8,9 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "Audio.h"
+#import "AudioView.h"
 
-@interface GameScene : SKScene
+@interface GameScene : SKScene <SceneRef>
 
 @property(nonatomic, strong) Audio* audio;
 

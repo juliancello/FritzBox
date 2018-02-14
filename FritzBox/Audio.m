@@ -164,31 +164,25 @@
 }
 
 -(void)handleInterruption:(AVAudioEngine*)engine {
-//    NSLog(@"AVAudioEngineConfigurationChangeNotification");
-
+    NSLog(@"reset audio engine");
     if ([self start]){
         [_engine reset];
-//        NSLog(@"audio engine loaded");
         [self reconnect];
 
         AVAudioTime *time = nil;
         [_left loopAll: time];
-//        [_left muteAll];
         [_right loopAll: time];
-//        [_right muteAll];
-        
     }
 }
 
 -(void)audioHardwareRouteChanged:(id)arg{
-//    NSLog(@"audioHardwareRouteChanged");
+    NSLog(@"audioHardwareRouteChanged");
 }
 
 - (instancetype)initWithEngine:(AVAudioEngine*) engine {
     self = [super init];
     
     _engine = engine;
-    
     if (!_engine){
         _engine = [[AVAudioEngine alloc]init];
     }
@@ -208,8 +202,6 @@
     
     _left = [[Deck alloc]initWithEngine:_engine Files:paths inDirectory:@"samples/leif"];
     _right = [[Deck alloc]initWithEngine:_engine Files:paths inDirectory:@"samples/fritz"];
-    
-   
     
     _vox = [[Deck alloc]initWithEngine:_engine Files:[Audio voxSounds] inDirectory:@"samples/vox"];
     
@@ -232,11 +224,6 @@
     
     [_left updateVolume];
     [_right updateVolume];
-//    [_left.mixer setVolume];
-//    [_left setMaxVolume:leftNormal];
-    
-//    [_right.mixer setVolume];
-//    [_right setMaxVolume:rightNormal];
     
     // Start engine
     if ([self start]){
