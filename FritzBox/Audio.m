@@ -136,7 +136,7 @@
 
 +(NSArray*)voxSounds {
     return @[@"coolSolo", @"great", @"iSeeWhatYoureSaying", @"juhu", @"radler", @"reims", @"rhubarber", @"rrreims", @"theChicken", @"told",@"bassoon",@"partyRoom",@"cackle",@"carlTheIceberg",@"congrats",@"cutter",@"cuttlefish",@"dontKnow",@"greatNippleSong",@"imNotARapper",@"killayKillayKillay",@"orangeTrashCan", @"punchHimInTheNose", @"pure", @"shark", @"sorryForMyHonesty", @"whatDoesTheDongleDo"];
-}
+}  // TODO: replace labels to match gvox Audio.m
 
 -(void)setCrossFader:(float) mix{
     _left.mixVolume = mix > .5 ? (1.0 - mix) : 1.0;
@@ -200,10 +200,10 @@
     // Prepare AVAudioFile
     NSArray* paths = @[@"drums", @"bass",@"rhythm", @"lead"];
     
-    _left = [[Deck alloc]initWithEngine:_engine Files:paths inDirectory:@"samples/leif"];
+    _left = [[Deck alloc]initWithEngine:_engine Files:paths inDirectory:@"samples/leif"];  // TODO: (optional) create samples/grayson
     _right = [[Deck alloc]initWithEngine:_engine Files:paths inDirectory:@"samples/fritz"];
     
-    _vox = [[Deck alloc]initWithEngine:_engine Files:[Audio voxSounds] inDirectory:@"samples/vox"];
+    _vox = [[Deck alloc]initWithEngine:_engine Files:[Audio voxSounds] inDirectory:@"samples/vox"];  // TODO: create samples/gvox
     
     _echo = [AVAudioUnitDelay new];
     

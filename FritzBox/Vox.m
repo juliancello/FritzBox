@@ -115,7 +115,7 @@
                 @"punchHimInTheNose": @"Punch Him",
                 @"sorryForMyHonesty": @"Sorry...",
                 @"whatDoesTheDongleDo": @"The Dongle"
-                };
+                };  // TODO: replace labels to match gvox Audio.m
     _sounds = [Audio voxSounds];
     _buttonLayer = [[SKNode alloc]init];
     [self addChild:_buttonLayer];
